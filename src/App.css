@@ -48,9 +48,9 @@ MovieCard
 ---------------------------------------------------------------- */
 
 .movie-card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) , 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: auto;
+  margin: 15px;
   width: 45%;
 }
 
@@ -58,9 +58,7 @@ MovieCard
   width: 100%;
 }
 
-.movie-card h2,
-.movie-card h4,
-.movie-card p {
+.movie-card h2, .movie-card h4, .movie-card p {
   margin: 15px 10px;
 }
 
@@ -69,23 +67,21 @@ MovieCard
 }
 
 .movie-card-link {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
-.movie-card-link a:link,
-.movie-card-link a:visited {
-  width: 100%;
+.movie-card-link a:link, .movie-card-link a:visited {
   background-color: #f44336;
   color: white;
+  display: inline-block;
   padding: 14px 25px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  width: 100%;
 }
 
-.movie-card-link a:hover,
-.movie-card-link a:active {
+.movie-card-link a:hover, .movie-card-link a:active {
   background-color: #dd1f11;
 }

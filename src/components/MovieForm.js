@@ -172,6 +172,7 @@ MovieForm.propTypes = {
     rating: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     imagePath: PropTypes.string,
   }).isRequired,
+  onSubmit: PropTypes.func.isRequired,
 };
 
 export default MovieForm;
