@@ -15,6 +15,8 @@ class MovieDetails extends Component {
       movie: [],
       loading: true,
     };
+
+    this.deleteMovie = this.deleteMovie.bind(this);
   }
 
   componentDidMount() {
