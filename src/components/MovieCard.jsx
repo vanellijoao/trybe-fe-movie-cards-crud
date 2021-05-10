@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 class MovieCard extends React.Component {
   render() {
     const { movie: {
+      id,
       imagePath,
       title,
       subtitle,
@@ -25,7 +26,7 @@ class MovieCard extends React.Component {
           </p>
         </div>
         <div className="movie-card-link">
-          <Link to="/DEPOISTROCAISSO"> Ver Detalhes </Link>
+          <Link to={ `/movies/${id}` }> VER DETALHES </Link>
         </div>
       </div>
     );
@@ -34,10 +35,11 @@ class MovieCard extends React.Component {
 
 MovieCard.propTypes = {
   movie: PropTypes.shape({
+    id: PropTypes.number,
     title: PropTypes.string,
     subtitle: PropTypes.string,
     storyline: PropTypes.string,
-    rating: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    rating: PropTypes.number,
     imagePath: PropTypes.string,
   }).isRequired,
 };

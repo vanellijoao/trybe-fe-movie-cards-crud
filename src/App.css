@@ -85,3 +85,20 @@ MovieCard
 .movie-card-link a:hover, .movie-card-link a:active {
   background-color: #dd1f11;
 }
+
+/* ----------------------------------------------------------------
+MovieDetails
+---------------------------------------------------------------- */
+
+.big-card {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+}
+
+.big-card div a {
+  margin: 10px;
+}
